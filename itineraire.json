@@ -1,0 +1,377 @@
+{
+  "pays": "Vanuatu",
+  "drapeau": "🇻🇺",
+  "symbole": "🌴",
+  "titre": "Vanuatu: L'Archipel des Merveilles Volcaniques et Culturelles",
+  "budget_total": "5800€",
+  "duree": "12 jours",
+  "date_debut": "2025-12-27",
+  "date_fin": "2026-01-08",
+  "temps_vol": "28h depuis Bigot, Philippines avec escales",
+  "jours": [
+    {
+      "jour": 1,
+      "symbole": "🛬",
+      "titre": "Arrivée à Port Vila, Efate",
+      "legende": "Après un long voyage, l'arrivée à Port Vila offre une première immersion douce dans l'ambiance mélanésienne. Prenez le temps de vous installer et de vous imprégner des couleurs et des sons de la capitale, porte d'entrée de cet archipel fascinant. Une journée pour se reposer et commencer à découvrir les charmes de l'île principale.",
+      "lieu": "Port Vila, Efate",
+      "activites": [
+        "🛬 <strong>Arrivée à l'aéroport international de Port Vila (VLI)</strong>: Après les formalités, transfert vers votre hôtel pour vous rafraîchir et vous détendre.",
+        "🛏️ <strong>Installation à l'hôtel</strong>: Prenez possession de votre chambre et profitez des équipements de l'établissement pour un moment de repos bien mérité.",
+        "🚶‍♂️ <strong>Balade le long du front de mer de Port Vila</strong>: Une promenade légère pour découvrir l'animation du port, les marchés locaux et les premiers panoramas sur la baie."
+      ],
+      "illustration": "jour1.jpg",
+      "encarts": [
+        {
+          "symbole": "ℹ️",
+          "titre": "À savoir",
+          "texte": "Le Vatu (VUV) est la monnaie locale. Il est conseillé de changer un peu d'argent à l'aéroport ou dans les banques de Port Vila."
+        },
+        {
+          "symbole": "🚕",
+          "titre": "Transport",
+          "texte": "Les taxis et les bus locaux (minibus) sont les principaux moyens de transport à Port Vila. Négociez le prix avant de monter."
+        }
+      ]
+    },
+    {
+      "jour": 2,
+      "symbole": "🛍️",
+      "titre": "Marché local et cascades rafraîchissantes",
+      "legende": "Plongez au cœur de la vie locale en explorant le marché animé de Port Vila, un festival de couleurs et de saveurs, puis laissez-vous rafraîchir par la beauté naturelle des cascades de Mele. Une journée entre culture vibrante et paysages luxuriants, offrant un aperçu authentique de l'île d'Efate.",
+      "lieu": "Port Vila, Efate",
+      "activites": [
+        "🛍️ <strong>Visite du marché de Port Vila</strong>: Découvrez les produits frais, l'artisanat local et l'ambiance conviviale de ce marché central, véritable cœur battant de la capitale.",
+        "💧 <strong>Excursion aux Mele Cascades & Secret Garden</strong>: Randonnez à travers une forêt tropicale luxuriante pour atteindre des piscines naturelles et des chutes d'eau spectaculaires, parfaites pour une baignade rafraîchissante. Le Secret Garden à proximité offre un aperçu de la culture et de la faune locale."
+      ],
+      "illustration": "jour2.jpg",
+      "encarts": [
+        {
+          "symbole": "🍽️",
+          "titre": "Repas",
+          "texte": "Goûtez aux fruits tropicaux frais et aux plats locaux préparés au marché pour une expérience culinaire authentique et économique."
+        },
+        {
+          "symbole": "👟",
+          "titre": "Conseil",
+          "texte": "Prévoyez des chaussures d'eau ou des sandales robustes pour les cascades, car les rochers peuvent être glissants."
+        }
+      ]
+    },
+    {
+      "jour": 3,
+      "symbole": "💧",
+      "titre": "Lagons bleus et sanctuaire marin",
+      "legende": "Évadez-vous vers les eaux turquoise du Blue Lagoon, un véritable havre de paix et de baignade, avant de rencontrer la faune marine locale dans un sanctuaire dédié. Une journée dédiée à la détente et à la découverte des trésors naturels d'Efate, entre eaux cristallines et rencontres animales.",
+      "lieu": "Efate",
+      "activites": [
+        "🏊 <strong>Baignade au Blue Lagoon</strong>: Profitez des eaux incroyablement bleues de ce lagon naturel, idéal pour la baignade et le farniente. Des cordes sont disponibles pour se balancer et plonger.",
+        "🐢 <strong>Visite du Eton Beach & Turtle Sanctuary</strong>: Détendez-vous sur la plage d'Eton et découvrez un sanctuaire où les tortues marines sont protégées et soignées avant d'être relâchées dans l'océan."
+      ],
+      "illustration": "jour3.jpg",
+      "encarts": [
+        {
+          "symbole": "☀️",
+          "titre": "Protection",
+          "texte": "N'oubliez pas votre crème solaire biodégradable, un chapeau et des lunettes de soleil pour vous protéger du soleil tropical."
+        },
+        {
+          "symbole": "📸",
+          "titre": "Photo",
+          "texte": "Le Blue Lagoon offre des opportunités de photos spectaculaires grâce à la couleur unique de son eau."
+        }
+      ]
+    },
+    {
+      "jour": 4,
+      "symbole": "🛖",
+      "titre": "Immersion culturelle et vol vers Tanna",
+      "legende": "Avant de quitter Efate, découvrez les traditions ancestrales d'un village culturel, où vous serez initié aux coutumes mélanésiennes, puis préparez-vous pour l'aventure volcanique de Tanna. Une transition enrichissante entre histoire vivante et nature sauvage, marquant le début d'une nouvelle étape de votre voyage.",
+      "lieu": "Efate & Tanna",
+      "activites": [
+        "🛖 <strong>Visite du Ekasup Cultural Village</strong>: Participez à une expérience immersive pour comprendre la culture \"Kastom\" du Vanuatu, avec des démonstrations de danses, de cuisine traditionnelle et d'artisanat.",
+        "✈️ <strong>Vol de Port Vila (VLI) à Tanna (TAH)</strong>: En fin d'après-midi, transfert à l'aéroport pour un court vol intérieur vers l'île de Tanna, célèbre pour son volcan actif. Installation à l'hôtel à l'arrivée."
+      ],
+      "illustration": "jour4.jpg",
+      "encarts": [
+        {
+          "symbole": "🎁",
+          "titre": "Souvenirs",
+          "texte": "Les villages culturels sont d'excellents endroits pour acheter de l'artisanat authentique et soutenir les communautés locales."
+        },
+        {
+          "symbole": "🧳",
+          "titre": "Bagages",
+          "texte": "Les vols intérieurs ont souvent des restrictions de poids plus strictes. Prévoyez un petit sac pour les essentiels à Tanna."
+        }
+      ]
+    },
+    {
+      "jour": 5,
+      "symbole": "🌋",
+      "titre": "Le spectacle du Mont Yasur",
+      "legende": "Journée emblématique sur l'île de Tanna, dédiée à l'ascension du Mont Yasur, l'un des volcans les plus accessibles et actifs du monde. Préparez-vous à un spectacle naturel inoubliable au coucher du soleil, où la terre respire le feu, offrant des explosions régulières et des projections de lave incandescentes. Une expérience à couper le souffle.",
+      "lieu": "Tanna",
+      "activites": [
+        "🌋 <strong>Excursion au Mont Yasur</strong>: Départ en 4x4 vers le volcan. Après une courte marche, vous assisterez au coucher du soleil à un spectacle pyrotechnique naturel unique, avec des explosions de lave et de cendres.",
+        "✨ <strong>Observation nocturne du volcan</strong>: Restez un peu après le coucher du soleil pour admirer les projections de lave rougeoyante dans l'obscurité, une vision encore plus impressionnante."
+      ],
+      "illustration": "jour5.jpg",
+      "encarts": [
+        {
+          "symbole": "⚠️",
+          "titre": "Sécurité",
+          "texte": "Suivez toujours les instructions des guides locaux et respectez les zones de sécurité autour du cratère du volcan."
+        },
+        {
+          "symbole": "🧥",
+          "titre": "Équipement",
+          "texte": "Portez des chaussures fermées, des vêtements longs pour vous protéger des cendres et un imperméable en cas de pluie."
+        }
+      ]
+    },
+    {
+      "jour": 6,
+      "symbole": "♨️",
+      "titre": "Culture Kastom et sources chaudes",
+      "legende": "Imprégnez-vous de la culture Kastom de Tanna en visitant un village traditionnel, où les habitants vivent selon des coutumes ancestrales, puis détendez-vous dans les sources chaudes naturelles de Port Resolution. Une journée pour comprendre l'âme de l'île, ses traditions profondes et ses bienfaits naturels, offrant un contraste apaisant après l'intensité du volcan.",
+      "lieu": "Tanna",
+      "activites": [
+        "🛖 <strong>Visite du Yakel Cultural Village</strong>: Découvrez un village authentique où les habitants vivent encore selon les traditions \"Kastom\", sans influence moderne. Assistez à des danses et des rituels.",
+        "♨️ <strong>Détente aux sources chaudes de Port Resolution</strong>: Profitez des piscines naturelles chauffées par l'activité volcanique, un moment de relaxation bienvenu après l'exploration."
+      ],
+      "illustration": "jour6.jpg",
+      "encarts": [
+        {
+          "symbole": "🤝",
+          "titre": "Respect",
+          "texte": "Demandez toujours la permission avant de prendre des photos des habitants, surtout dans les villages traditionnels."
+        },
+        {
+          "symbole": "💰",
+          "titre": "Contribution",
+          "texte": "Une petite contribution est souvent demandée pour visiter les villages, cela aide à soutenir la communauté locale."
+        }
+      ]
+    },
+    {
+      "jour": 7,
+      "symbole": "☕",
+      "titre": "Saveurs locales et envol vers Santo",
+      "legende": "Découvrez les saveurs locales avec une visite de plantation de café, où vous apprendrez le processus de fabrication, puis envolez-vous vers Espiritu Santo, l'île aux merveilles sous-marines et aux plages idylliques. Une transition douce vers de nouvelles aventures, passant des paysages volcaniques aux trésors côtiers et marins.",
+      "lieu": "Tanna & Espiritu Santo",
+      "activites": [
+        "☕ <strong>Visite d'une plantation de café de Tanna</strong>: Explorez les champs de caféiers et apprenez-en davantage sur la culture et la production du café local, réputé pour sa qualité. Dégustation possible.",
+        "✈️ <strong>Vol de Tanna (TAH) à Espiritu Santo (SON)</strong>: Transfert à l'aéroport de Tanna pour un vol intérieur vers Luganville, la ville principale d'Espiritu Santo. Installation à l'hôtel et soirée libre."
+      ],
+      "illustration": "jour7.jpg",
+      "encarts": [
+        {
+          "symbole": "🎁",
+          "titre": "Produits locaux",
+          "texte": "Le café de Tanna est un excellent souvenir à rapporter, souvent vendu directement par les producteurs."
+        },
+        {
+          "symbole": "🗺️",
+          "titre": "Orientation",
+          "texte": "Luganville est plus grande que Port Vila. Familiarisez-vous avec la ville en arrivant pour faciliter vos déplacements."
+        }
+      ]
+    },
+    {
+      "jour": 8,
+      "symbole": "🏖️",
+      "titre": "Plages de rêve et Blue Holes",
+      "legende": "Laissez-vous émerveiller par la beauté immaculée de Champagne Beach, réputée pour son sable fin et ses eaux cristallines, avant de plonger dans les profondeurs azur d'un \"Blue Hole\" enchanteur. Une journée de pure carte postale, entre farniente sur une plage iconique et baignade rafraîchissante dans des piscines naturelles d'une clarté incroyable.",
+      "lieu": "Espiritu Santo",
+      "activites": [
+        "🏖️ <strong>Détente à Champagne Beach</strong>: Profitez de l'une des plus belles plages du monde, célèbre pour son sable blanc et ses eaux turquoise. Le nom vient des bulles qui remontent du sable à marée basse.",
+        "💧 <strong>Baignade au Matevulu Blue Hole</strong>: Plongez dans les eaux douces et cristallines de ce \"Blue Hole\" entouré d'une végétation luxuriante, un lieu magique pour nager et se détendre."
+      ],
+      "illustration": "jour8.jpg",
+      "encarts": [
+        {
+          "symbole": "💲",
+          "titre": "Accès",
+          "texte": "L'accès à Champagne Beach et aux Blue Holes est payant, les fonds contribuent souvent aux communautés locales."
+        },
+        {
+          "symbole": "🧺",
+          "titre": "Pique-nique",
+          "texte": "Préparez un pique-nique pour Champagne Beach, car les options de restauration y sont limitées."
+        }
+      ]
+    },
+    {
+      "jour": 9,
+      "symbole": "🚢",
+      "titre": "Histoire sous-marine et épave mythique",
+      "legende": "Explorez les vestiges de la Seconde Guerre Mondiale à Million Dollar Point, un site unique où l'armée américaine a déversé son matériel, puis, pour les amateurs de plongée, découvrez l'épave mythique du SS President Coolidge. Une immersion fascinante entre histoire et biodiversité marine, offrant des récits poignants et des paysages sous-marins spectaculaires.",
+      "lieu": "Espiritu Santo",
+      "activites": [
+        "⚓ <strong>Visite de Million Dollar Point</strong>: Plongez avec masque et tuba parmi les bulldozers, jeeps et autres équipements militaires américains abandonnés après la Seconde Guerre Mondiale.",
+        "🤿 <strong>Plongée ou snorkeling sur l'épave du SS President Coolidge</strong>: Pour les plongeurs certifiés, explorez cette épave géante, l'un des plus grands et des plus accessibles sites de plongée sur épave au monde. Les non-plongeurs peuvent faire du snorkeling à proximité."
+      ],
+      "illustration": "jour9.jpg",
+      "encarts": [
+        {
+          "symbole": "📜",
+          "titre": "Histoire",
+          "texte": "Million Dollar Point est un témoignage unique de la fin de la Seconde Guerre Mondiale dans le Pacifique."
+        },
+        {
+          "symbole": "🐠",
+          "titre": "Faune marine",
+          "texte": "Les épaves et les récifs de Santo abritent une vie marine abondante, idéale pour l'observation."
+        }
+      ]
+    },
+    {
+      "jour": 10,
+      "symbole": "🐠",
+      "titre": "Derniers trésors de Santo",
+      "legende": "Profitez d'une dernière baignade rafraîchissante dans un autre \"Blue Hole\" enchanteur, offrant une clarté et une sérénité uniques, puis flânez au marché local de Luganville pour quelques souvenirs. Une journée pour savourer les dernières douceurs de Santo, entre nature préservée et immersion dans la vie quotidienne des habitants.",
+      "lieu": "Espiritu Santo",
+      "activites": [
+        "🏊 <strong>Baignade au Riri Blue Hole</strong>: Un autre joyau naturel, le Riri Blue Hole offre des eaux tout aussi limpides et un cadre paisible pour une dernière baignade mémorable.",
+        "🛍️ <strong>Exploration du marché de Luganville</strong>: Visitez le marché de la ville pour acheter des fruits frais, des légumes et de l'artisanat local, parfait pour les derniers souvenirs."
+      ],
+      "illustration": "jour10.jpg",
+      "encarts": [
+        {
+          "symbole": "🛶",
+          "titre": "Activité",
+          "texte": "Au Riri Blue Hole, vous pouvez souvent louer des kayaks pour explorer le lagon et la rivière environnante."
+        },
+        {
+          "symbole": "🎁",
+          "titre": "Artisanat",
+          "texte": "Cherchez des sculptures sur bois, des paniers tressés ou des bijoux en coquillages comme souvenirs authentiques."
+        }
+      ]
+    },
+    {
+      "jour": 11,
+      "symbole": "🛍️",
+      "titre": "Retour à Port Vila et shopping",
+      "legende": "Retour à Port Vila pour une journée plus tranquille, idéale pour les derniers achats de souvenirs ou simplement pour se détendre au bord de l'eau. Une occasion de revoir la capitale sous un autre angle, de profiter de ses commodités et de préparer sereinement votre départ, en vous remémorant les aventures passées.",
+      "lieu": "Port Vila, Efate",
+      "activites": [
+        "✈️ <strong>Vol de Espiritu Santo (SON) à Port Vila (VLI)</strong>: Transfert à l'aéroport de Luganville pour votre vol retour vers Efate. Installation dans un nouvel hôtel ou le même qu'au début du séjour.",
+        "🛍️ <strong>Shopping de dernière minute et détente</strong>: Profitez de l'après-midi pour acheter des souvenirs dans les boutiques de Port Vila ou vous détendre dans un café en bord de mer."
+      ],
+      "illustration": "jour11.jpg",
+      "encarts": [
+        {
+          "symbole": "🎁",
+          "titre": "Souvenirs",
+          "texte": "Les boutiques de Port Vila proposent une plus grande variété de souvenirs que les îles plus reculées."
+        },
+        {
+          "symbole": "🍽️",
+          "titre": "Dîner",
+          "texte": "Offrez-vous un bon dîner dans l'un des restaurants de Port Vila pour célébrer la fin de votre voyage."
+        }
+      ]
+    },
+    {
+      "jour": 12,
+      "symbole": "🛫",
+      "titre": "Départ de Vanuatu",
+      "legende": "Profitez des dernières heures à Port Vila pour un petit-déjeuner paisible ou une dernière balade, avant de prendre votre vol retour. Des souvenirs inoubliables de l'archipel des sourires plein la tête, des paysages volcaniques aux plages idylliques, en passant par des rencontres culturelles enrichissantes. Un voyage qui restera gravé dans votre mémoire.",
+      "lieu": "Port Vila, Efate",
+      "activites": [
+        "🥐 <strong>Dernier petit-déjeuner à Port Vila</strong>: Savourez un dernier repas en profitant de l'ambiance tropicale de la capitale.",
+        "🛫 <strong>Transfert à l'aéroport et vol retour</strong>: Selon l'heure de votre vol, transfert à l'aéroport international de Port Vila pour votre départ vers Bigot, Philippines."
+      ],
+      "illustration": "jour12.jpg",
+      "encarts": [
+        {
+          "symbole": "✈️",
+          "titre": "Check-in",
+          "texte": "Arrivez à l'aéroport au moins 2-3 heures avant votre vol international pour les formalités d'enregistrement et de sécurité."
+        },
+        {
+          "symbole": "🛂",
+          "titre": "Douanes",
+          "texte": "Assurez-vous d'avoir tous vos documents de voyage (passeport, billets) à portée de main pour le départ."
+        }
+      ]
+    }
+  ],
+  "detail_budget": [
+    {
+      "titre": "Budget vol:",
+      "legende": "2000€/pers (Vol international A/R Bigot-Port Vila avec escales en classe économique)",
+      "symbole": "🛬"
+    },
+    {
+      "titre": "Budget transports:",
+      "legende": "1280€/pers (800€ vols intérieurs + 480€ transports locaux/tours)",
+      "symbole": "🚆"
+    },
+    {
+      "titre": "Budget repas:",
+      "legende": "720€/pers (12 jours x 60€/jour pour repas moyens)",
+      "symbole": "🥗"
+    },
+    {
+      "titre": "Budget logement:",
+      "legende": "1375€/pers (11 nuits x 125€/nuit en hôtel 3 étoiles)",
+      "symbole": "🛏️"
+    },
+    {
+      "titre": "Budget activités:",
+      "legende": "400€/pers (Entrées sites, excursions volcan, blue holes, villages culturels)",
+      "symbole": "🎭"
+    }
+  ],
+  "periodes_ideales": [
+    {
+      "titre": "Les périodes idéales pour ce séjour sont les mois de Mai à Octobre (saison sèche et fraîche).",
+      "symbole": "☀️"
+    },
+    {
+      "titre": "La période de Décembre à Janvier correspond à la saison humide et chaude, avec un risque accru de cyclones.",
+      "symbole": "🌧️"
+    }
+  ],
+  "infos_pratiques": [
+    {
+      "titre": "La population du Vanuatu est majoritairement mélanésienne, connue pour son hospitalité et sa culture \"Kastom\" très présente. Le pays compte plus de 100 langues locales.",
+      "symbole": "🤝"
+    },
+    {
+      "titre": "Le Vanuatu est un archipel volcanique de 83 îles, situé en Mélanésie. Il est souvent cité comme l'un des pays les plus heureux du monde.",
+      "symbole": "🏝️"
+    },
+    {
+      "titre": "Une tradition insolite est le \"Nagol\" (saut de la terre) sur l'île de Pentecôte, l'ancêtre du saut à l'élastique, pratiqué entre avril et juin.",
+      "symbole": "🤸"
+    },
+    {
+      "titre": "L'île de Tanna abrite le culte de John Frum, une religion cargo unique qui vénère un messie américain.",
+      "symbole": "🗿"
+    }
+  ],
+  "liens_utiles": [
+    {
+      "legende": "Informations officielles et inspirations de voyage",
+      "titre": "Tourisme Vanuatu",
+      "url": "https://www.vanuatu.travel/",
+      "symbole": "📘"
+    },
+    {
+      "legende": "Compagnie aérienne nationale pour les vols intérieurs",
+      "titre": "Air Vanuatu",
+      "url": "https://www.airvanuatu.com/",
+      "symbole": "✈️"
+    },
+    {
+      "legende": "Prévisions météorologiques et alertes cyclones",
+      "titre": "Vanuatu Meteorology",
+      "url": "https://www.met.gov.vu/",
+      "symbole": "🌤️"
+    }
+  ]
+}
