@@ -1,0 +1,620 @@
+
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanuatu: L'Archipel des Merveilles Volcaniques et Culturelles </title>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <script>
+      tailwind.config = {
+          theme: {
+              extend: {
+                  colors: {
+                      template: {
+                          sable: '#FFEDD5', 
+                          ocre: '#F97316',   // Orange Vibrant (Brand Accent)
+                          roche: '#0F172A',  // Bleu Nuit (Brand Dark)
+                          ciel: '#0D9488',   // Vert Lagon (Brand Primary)
+                          bg: '#FFF7ED'      // C'est un blanc cassé chaud, parfait pour la lecture et le contraste.
+                      }
+                  },
+                  fontFamily: {
+                      sans: ['"Plus Jakarta Sans"', 'sans-serif'], // Nouvelle police corps
+                      serif: ['"Outfit"', 'sans-serif'],           // Nouvelle police titres
+                  }
+              }
+          }
+      }
+    </script>
+    <style>
+        body { overflow-x: hidden; }
+        
+        /* 2. FORÇAGE DES GRAISSES (Comme sur la Landing Page) */
+        .font-sans { font-weight: 600 !important; }
+        .font-serif { font-weight: 800 !important; }
+
+        /* Ligne verticale de la timeline */
+        .timeline-line {
+            position: absolute;
+            left: 24px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background-color: #E5E7EB;
+            z-index: 0;
+        }
+
+        @media (min-width: 768px) {
+            .timeline-line { left: 50%; margin-left: -1px; }
+        }
+
+        /* Style des cartes Info */
+        .tip-card {
+            border-left: 4px solid #F97316; /* ocre */
+            background-color: #FFF7ED;
+        }
+
+        /* Masquer la scrollbar de la nav mobile tout en gardant le scroll */
+        .hide-scroll::-webkit-scrollbar { display: none; }
+        .hide-scroll { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="bg-template-bg text-template-roche antialiased">
+    
+    <nav id="nav-desktop" class="hidden md:flex fixed top-0 w-full z-50 bg-white/90 backdrop-blur border-b border-gray-200 py-4 px-8 justify-between items-center shadow-sm transition-transform duration-300 -translate-y-full">
+        <a href="#top" class="text-xl font-serif font-bold tracking-widest text-template-roche">MyTrip<span class="text-template-ocre">Planner</span></a>
+        <div class="space-x-6 text-sm font-bold text-gray-600">
+            <a href="#jour-1" class="nav-item-desktop hover:text-template-ocre transition">Le Parcours</a>
+            <a href="#pratique" class="nav-item-desktop hover:text-template-ocre transition">Infos Pratiques</a>
+        </div>
+    </nav>
+
+    <nav id="nav-mobile" class="md:hidden fixed top-0 w-full z-50 bg-white/95 backdrop-blur border-b border-gray-200 py-3 pl-4 overflow-x-auto hide-scroll whitespace-nowrap shadow-md transition-transform duration-300 -translate-y-full">
+        <div class="flex space-x-2 pr-4" id="mobile-menu-container">
+            <a href="#top" class="inline-block px-3 py-1 bg-template-roche text-white rounded-full text-xs font-bold shadow-sm">Top</a>
+            
+                <a href="#jour-1" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J1 Arrivée à Port Vila, Efate</a>
+            
+                <a href="#jour-2" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J2 Marché local et cascades rafraîchissantes</a>
+            
+                <a href="#jour-3" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J3 Lagons bleus et sanctuaire marin</a>
+            
+                <a href="#jour-4" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J4 Immersion culturelle et vol vers Tanna</a>
+            
+                <a href="#jour-5" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J5 Le spectacle du Mont Yasur</a>
+            
+                <a href="#jour-6" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J6 Culture Kastom et sources chaudes</a>
+            
+                <a href="#jour-7" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J7 Saveurs locales et envol vers Santo</a>
+            
+                <a href="#jour-8" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J8 Plages de rêve et Blue Holes</a>
+            
+                <a href="#jour-9" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J9 Histoire sous-marine et épave mythique</a>
+            
+                <a href="#jour-10" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J10 Derniers trésors de Santo</a>
+            
+                <a href="#jour-11" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J11 Retour à Port Vila et shopping</a>
+            
+                <a href="#jour-12" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J12 Départ de Vanuatu</a>
+            
+            <a href="#pratique" class="mobile-link inline-block px-3 py-1 border border-gray-300 text-gray-500 rounded-full text-xs font-bold">Infos</a>
+        </div>
+    </nav>
+
+    <header id="top" class="relative h-[60vh] flex items-center justify-center bg-cover bg-center"
+            style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url('https://raw.githubusercontent.com/mytripplanner-dotfr/Vanuatu-rm8cw237f7tpkn5/main/header.png" || 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?q=80&w=2021'}');">
+        
+        <div class="relative z-20 text-center text-white px-4 max-w-3xl animate-fade-in-up">
+            <p class="font-sans text-template-sable tracking-[0.2em] mb-4 uppercase text-xs font-bold">Feuille de Route</p>
+            <h1 class="font-serif text-5xl md:text-8xl mb-6 leading-tight drop-shadow-lg">VANUATU</h1>
+            <p class="font-sans text-lg md:text-xl text-gray-100 mb-10 font-medium max-w-2xl mx-auto leading-relaxed">Vanuatu: L'Archipel des Merveilles Volcaniques et Culturelles</p>
+            
+            <div class="flex flex-wrap justify-center gap-4 text-sm font-bold mb-10">
+                <span class="bg-white/20 backdrop-blur-md px-5 py-2 rounded-full border border-white/30 shadow-sm">🗓️ Du 27 Décembre 2025 au 8 Janvier 2026</span>
+                <span class="bg-white/20 backdrop-blur-md px-5 py-2 rounded-full border border-white/30 shadow-sm">💰 5800€</span>
+                <span class="bg-white/20 backdrop-blur-md px-5 py-2 rounded-full border border-white/30 shadow-sm">🛬 28h depuis Bigot, Philippines avec escales</span>
+            </div>
+        </div>
+    </header>
+
+    <section id="itineraire" class="max-w-6xl mx-auto px-4 py-16 relative">
+      <div class="text-center mb-16">
+            <h2 class="text-template-ocre font-bold tracking-normal text-4xl mt-2 uppercase font-serif">Votre Roadtrip</h2>
+      </div>
+
+        <div class="relative">
+            <div class="timeline-line"></div>
+            
+                <div id="jour-1" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-roche rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 1</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Arrivée à Port Vila, Efate</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Après un long voyage, l'arrivée à Port Vila offre une première immersion douce dans l'ambiance mélanésienne. Prenez le temps de vous installer et de vous imprégner des couleurs et des sons de la capitale, porte d'entrée de cet archipel fascinant. Une journée pour se reposer et commencer à découvrir les charmes de l'île principale.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li>🛬 <strong>Arrivée à l'aéroport international de Port Vila (VLI)</strong>: Après les formalités, transfert vers votre hôtel pour vous rafraîchir et vous détendre.</li><li>🛏️ <strong>Installation à l'hôtel</strong>: Prenez possession de votre chambre et profitez des équipements de l'établissement pour un moment de repos bien mérité.</li><li>🚶‍♂️ <strong>Balade le long du front de mer de Port Vila</strong>: Une promenade légère pour découvrir l'animation du port, les marchés locaux et les premiers panoramas sur la baie.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Vanuatu-rm8cw237f7tpkn5/main/jour1.jpg" class="w-full h-64 object-cover" alt="Jour 1">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">ℹ️ À savoir</p>
+                                <p class="text-gray-700">Le Vatu (VUV) est la monnaie locale. Il est conseillé de changer un peu d'argent à l'aéroport ou dans les banques de Port Vila.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🚕 Transport</p>
+                                <p class="text-gray-700">Les taxis et les bus locaux (minibus) sont les principaux moyens de transport à Port Vila. Négociez le prix avant de monter.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-2" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ocre rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 2</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Marché local et cascades rafraîchissantes</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Plongez au cœur de la vie locale en explorant le marché animé de Port Vila, un festival de couleurs et de saveurs, puis laissez-vous rafraîchir par la beauté naturelle des cascades de Mele. Une journée entre culture vibrante et paysages luxuriants, offrant un aperçu authentique de l'île d'Efate.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li>🛍️ <strong>Visite du marché de Port Vila</strong>: Découvrez les produits frais, l'artisanat local et l'ambiance conviviale de ce marché central, véritable cœur battant de la capitale.</li><li>💧 <strong>Excursion aux Mele Cascades & Secret Garden</strong>: Randonnez à travers une forêt tropicale luxuriante pour atteindre des piscines naturelles et des chutes d'eau spectaculaires, parfaites pour une baignade rafraîchissante. Le Secret Garden à proximité offre un aperçu de la culture et de la faune locale.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Vanuatu-rm8cw237f7tpkn5/main/jour2.jpg" class="w-full h-64 object-cover" alt="Jour 2">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🍽️ Repas</p>
+                                <p class="text-gray-700">Goûtez aux fruits tropicaux frais et aux plats locaux préparés au marché pour une expérience culinaire authentique et économique.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">👟 Conseil</p>
+                                <p class="text-gray-700">Prévoyez des chaussures d'eau ou des sandales robustes pour les cascades, car les rochers peuvent être glissants.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-3" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ciel rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 3</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Lagons bleus et sanctuaire marin</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Évadez-vous vers les eaux turquoise du Blue Lagoon, un véritable havre de paix et de baignade, avant de rencontrer la faune marine locale dans un sanctuaire dédié. Une journée dédiée à la détente et à la découverte des trésors naturels d'Efate, entre eaux cristallines et rencontres animales.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li>🏊 <strong>Baignade au Blue Lagoon</strong>: Profitez des eaux incroyablement bleues de ce lagon naturel, idéal pour la baignade et le farniente. Des cordes sont disponibles pour se balancer et plonger.</li><li>🐢 <strong>Visite du Eton Beach & Turtle Sanctuary</strong>: Détendez-vous sur la plage d'Eton et découvrez un sanctuaire où les tortues marines sont protégées et soignées avant d'être relâchées dans l'océan.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Vanuatu-rm8cw237f7tpkn5/main/jour3.jpg" class="w-full h-64 object-cover" alt="Jour 3">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">☀️ Protection</p>
+                                <p class="text-gray-700">N'oubliez pas votre crème solaire biodégradable, un chapeau et des lunettes de soleil pour vous protéger du soleil tropical.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">📸 Photo</p>
+                                <p class="text-gray-700">Le Blue Lagoon offre des opportunités de photos spectaculaires grâce à la couleur unique de son eau.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-4" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-roche rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 4</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Immersion culturelle et vol vers Tanna</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Avant de quitter Efate, découvrez les traditions ancestrales d'un village culturel, où vous serez initié aux coutumes mélanésiennes, puis préparez-vous pour l'aventure volcanique de Tanna. Une transition enrichissante entre histoire vivante et nature sauvage, marquant le début d'une nouvelle étape de votre voyage.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li>🛖 <strong>Visite du Ekasup Cultural Village</strong>: Participez à une expérience immersive pour comprendre la culture "Kastom" du Vanuatu, avec des démonstrations de danses, de cuisine traditionnelle et d'artisanat.</li><li>✈️ <strong>Vol de Port Vila (VLI) à Tanna (TAH)</strong>: En fin d'après-midi, transfert à l'aéroport pour un court vol intérieur vers l'île de Tanna, célèbre pour son volcan actif. Installation à l'hôtel à l'arrivée.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Vanuatu-rm8cw237f7tpkn5/main/jour4.jpg" class="w-full h-64 object-cover" alt="Jour 4">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🎁 Souvenirs</p>
+                                <p class="text-gray-700">Les villages culturels sont d'excellents endroits pour acheter de l'artisanat authentique et soutenir les communautés locales.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🧳 Bagages</p>
+                                <p class="text-gray-700">Les vols intérieurs ont souvent des restrictions de poids plus strictes. Prévoyez un petit sac pour les essentiels à Tanna.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-5" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ocre rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 5</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Le spectacle du Mont Yasur</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Journée emblématique sur l'île de Tanna, dédiée à l'ascension du Mont Yasur, l'un des volcans les plus accessibles et actifs du monde. Préparez-vous à un spectacle naturel inoubliable au coucher du soleil, où la terre respire le feu, offrant des explosions régulières et des projections de lave incandescentes. Une expérience à couper le souffle.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li>🌋 <strong>Excursion au Mont Yasur</strong>: Départ en 4x4 vers le volcan. Après une courte marche, vous assisterez au coucher du soleil à un spectacle pyrotechnique naturel unique, avec des explosions de lave et de cendres.</li><li>✨ <strong>Observation nocturne du volcan</strong>: Restez un peu après le coucher du soleil pour admirer les projections de lave rougeoyante dans l'obscurité, une vision encore plus impressionnante.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Vanuatu-rm8cw237f7tpkn5/main/jour5.jpg" class="w-full h-64 object-cover" alt="Jour 5">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">⚠️ Sécurité</p>
+                                <p class="text-gray-700">Suivez toujours les instructions des guides locaux et respectez les zones de sécurité autour du cratère du volcan.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🧥 Équipement</p>
+                                <p class="text-gray-700">Portez des chaussures fermées, des vêtements longs pour vous protéger des cendres et un imperméable en cas de pluie.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-6" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ciel rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 6</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Culture Kastom et sources chaudes</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Imprégnez-vous de la culture Kastom de Tanna en visitant un village traditionnel, où les habitants vivent selon des coutumes ancestrales, puis détendez-vous dans les sources chaudes naturelles de Port Resolution. Une journée pour comprendre l'âme de l'île, ses traditions profondes et ses bienfaits naturels, offrant un contraste apaisant après l'intensité du volcan.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li>🛖 <strong>Visite du Yakel Cultural Village</strong>: Découvrez un village authentique où les habitants vivent encore selon les traditions "Kastom", sans influence moderne. Assistez à des danses et des rituels.</li><li>♨️ <strong>Détente aux sources chaudes de Port Resolution</strong>: Profitez des piscines naturelles chauffées par l'activité volcanique, un moment de relaxation bienvenu après l'exploration.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Vanuatu-rm8cw237f7tpkn5/main/jour6.jpg" class="w-full h-64 object-cover" alt="Jour 6">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🤝 Respect</p>
+                                <p class="text-gray-700">Demandez toujours la permission avant de prendre des photos des habitants, surtout dans les villages traditionnels.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">💰 Contribution</p>
+                                <p class="text-gray-700">Une petite contribution est souvent demandée pour visiter les villages, cela aide à soutenir la communauté locale.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-7" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-roche rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 7</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Saveurs locales et envol vers Santo</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Découvrez les saveurs locales avec une visite de plantation de café, où vous apprendrez le processus de fabrication, puis envolez-vous vers Espiritu Santo, l'île aux merveilles sous-marines et aux plages idylliques. Une transition douce vers de nouvelles aventures, passant des paysages volcaniques aux trésors côtiers et marins.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li>☕ <strong>Visite d'une plantation de café de Tanna</strong>: Explorez les champs de caféiers et apprenez-en davantage sur la culture et la production du café local, réputé pour sa qualité. Dégustation possible.</li><li>✈️ <strong>Vol de Tanna (TAH) à Espiritu Santo (SON)</strong>: Transfert à l'aéroport de Tanna pour un vol intérieur vers Luganville, la ville principale d'Espiritu Santo. Installation à l'hôtel et soirée libre.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Vanuatu-rm8cw237f7tpkn5/main/jour7.jpg" class="w-full h-64 object-cover" alt="Jour 7">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🎁 Produits locaux</p>
+                                <p class="text-gray-700">Le café de Tanna est un excellent souvenir à rapporter, souvent vendu directement par les producteurs.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🗺️ Orientation</p>
+                                <p class="text-gray-700">Luganville est plus grande que Port Vila. Familiarisez-vous avec la ville en arrivant pour faciliter vos déplacements.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-8" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ocre rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 8</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Plages de rêve et Blue Holes</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Laissez-vous émerveiller par la beauté immaculée de Champagne Beach, réputée pour son sable fin et ses eaux cristallines, avant de plonger dans les profondeurs azur d'un "Blue Hole" enchanteur. Une journée de pure carte postale, entre farniente sur une plage iconique et baignade rafraîchissante dans des piscines naturelles d'une clarté incroyable.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li>🏖️ <strong>Détente à Champagne Beach</strong>: Profitez de l'une des plus belles plages du monde, célèbre pour son sable blanc et ses eaux turquoise. Le nom vient des bulles qui remontent du sable à marée basse.</li><li>💧 <strong>Baignade au Matevulu Blue Hole</strong>: Plongez dans les eaux douces et cristallines de ce "Blue Hole" entouré d'une végétation luxuriante, un lieu magique pour nager et se détendre.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Vanuatu-rm8cw237f7tpkn5/main/jour8.jpg" class="w-full h-64 object-cover" alt="Jour 8">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">💲 Accès</p>
+                                <p class="text-gray-700">L'accès à Champagne Beach et aux Blue Holes est payant, les fonds contribuent souvent aux communautés locales.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🧺 Pique-nique</p>
+                                <p class="text-gray-700">Préparez un pique-nique pour Champagne Beach, car les options de restauration y sont limitées.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-9" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ciel rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 9</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Histoire sous-marine et épave mythique</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Explorez les vestiges de la Seconde Guerre Mondiale à Million Dollar Point, un site unique où l'armée américaine a déversé son matériel, puis, pour les amateurs de plongée, découvrez l'épave mythique du SS President Coolidge. Une immersion fascinante entre histoire et biodiversité marine, offrant des récits poignants et des paysages sous-marins spectaculaires.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li>⚓ <strong>Visite de Million Dollar Point</strong>: Plongez avec masque et tuba parmi les bulldozers, jeeps et autres équipements militaires américains abandonnés après la Seconde Guerre Mondiale.</li><li>🤿 <strong>Plongée ou snorkeling sur l'épave du SS President Coolidge</strong>: Pour les plongeurs certifiés, explorez cette épave géante, l'un des plus grands et des plus accessibles sites de plongée sur épave au monde. Les non-plongeurs peuvent faire du snorkeling à proximité.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Vanuatu-rm8cw237f7tpkn5/main/jour9.jpg" class="w-full h-64 object-cover" alt="Jour 9">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">📜 Histoire</p>
+                                <p class="text-gray-700">Million Dollar Point est un témoignage unique de la fin de la Seconde Guerre Mondiale dans le Pacifique.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🐠 Faune marine</p>
+                                <p class="text-gray-700">Les épaves et les récifs de Santo abritent une vie marine abondante, idéale pour l'observation.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-10" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-roche rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 10</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Derniers trésors de Santo</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Profitez d'une dernière baignade rafraîchissante dans un autre "Blue Hole" enchanteur, offrant une clarté et une sérénité uniques, puis flânez au marché local de Luganville pour quelques souvenirs. Une journée pour savourer les dernières douceurs de Santo, entre nature préservée et immersion dans la vie quotidienne des habitants.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li>🏊 <strong>Baignade au Riri Blue Hole</strong>: Un autre joyau naturel, le Riri Blue Hole offre des eaux tout aussi limpides et un cadre paisible pour une dernière baignade mémorable.</li><li>🛍️ <strong>Exploration du marché de Luganville</strong>: Visitez le marché de la ville pour acheter des fruits frais, des légumes et de l'artisanat local, parfait pour les derniers souvenirs.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Vanuatu-rm8cw237f7tpkn5/main/jour10.jpg" class="w-full h-64 object-cover" alt="Jour 10">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🛶 Activité</p>
+                                <p class="text-gray-700">Au Riri Blue Hole, vous pouvez souvent louer des kayaks pour explorer le lagon et la rivière environnante.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🎁 Artisanat</p>
+                                <p class="text-gray-700">Cherchez des sculptures sur bois, des paniers tressés ou des bijoux en coquillages comme souvenirs authentiques.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-11" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ocre rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 11</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Retour à Port Vila et shopping</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Retour à Port Vila pour une journée plus tranquille, idéale pour les derniers achats de souvenirs ou simplement pour se détendre au bord de l'eau. Une occasion de revoir la capitale sous un autre angle, de profiter de ses commodités et de préparer sereinement votre départ, en vous remémorant les aventures passées.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li>✈️ <strong>Vol de Espiritu Santo (SON) à Port Vila (VLI)</strong>: Transfert à l'aéroport de Luganville pour votre vol retour vers Efate. Installation dans un nouvel hôtel ou le même qu'au début du séjour.</li><li>🛍️ <strong>Shopping de dernière minute et détente</strong>: Profitez de l'après-midi pour acheter des souvenirs dans les boutiques de Port Vila ou vous détendre dans un café en bord de mer.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Vanuatu-rm8cw237f7tpkn5/main/jour11.jpg" class="w-full h-64 object-cover" alt="Jour 11">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🎁 Souvenirs</p>
+                                <p class="text-gray-700">Les boutiques de Port Vila proposent une plus grande variété de souvenirs que les îles plus reculées.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🍽️ Dîner</p>
+                                <p class="text-gray-700">Offrez-vous un bon dîner dans l'un des restaurants de Port Vila pour célébrer la fin de votre voyage.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-12" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ciel rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 12</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Départ de Vanuatu</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Profitez des dernières heures à Port Vila pour un petit-déjeuner paisible ou une dernière balade, avant de prendre votre vol retour. Des souvenirs inoubliables de l'archipel des sourires plein la tête, des paysages volcaniques aux plages idylliques, en passant par des rencontres culturelles enrichissantes. Un voyage qui restera gravé dans votre mémoire.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li>🥐 <strong>Dernier petit-déjeuner à Port Vila</strong>: Savourez un dernier repas en profitant de l'ambiance tropicale de la capitale.</li><li>🛫 <strong>Transfert à l'aéroport et vol retour</strong>: Selon l'heure de votre vol, transfert à l'aéroport international de Port Vila pour votre départ vers Bigot, Philippines.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Vanuatu-rm8cw237f7tpkn5/main/jour12.jpg" class="w-full h-64 object-cover" alt="Jour 12">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">✈️ Check-in</p>
+                                <p class="text-gray-700">Arrivez à l'aéroport au moins 2-3 heures avant votre vol international pour les formalités d'enregistrement et de sécurité.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🛂 Douanes</p>
+                                <p class="text-gray-700">Assurez-vous d'avoir tous vos documents de voyage (passeport, billets) à portée de main pour le départ.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+            </div>
+    </section>
+
+    <section id="pratique" class="bg-white border-t border-gray-200 pt-12 pb-12 scroll-mt-24">
+        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-10">
+            <div>
+                <h4 class="font-serif text-xl mb-4 text-template-roche flex items-center gap-2 font-bold">
+                    <span>💴</span> Budget
+                </h4>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2"><strong>Budget vol: </strong>2000€/pers (Vol international A/R Bigot-Port Vila avec escales en classe économique)</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2"><strong>Budget transports: </strong>1280€/pers (800€ vols intérieurs + 480€ transports locaux/tours)</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2"><strong>Budget repas: </strong>720€/pers (12 jours x 60€/jour pour repas moyens)</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2"><strong>Budget logement: </strong>1375€/pers (11 nuits x 125€/nuit en hôtel 3 étoiles)</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2"><strong>Budget activités: </strong>400€/pers (Entrées sites, excursions volcan, blue holes, villages culturels)</p>
+                
+            </div>
+            <div>
+                <h4 class="font-serif text-xl mb-4 text-template-roche flex items-center gap-2 font-bold">
+                    <span>☀️</span> Périodes Idéales
+                </h4>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2">Les périodes idéales pour ce séjour sont les mois de Mai à Octobre (saison sèche et fraîche).</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2">La période de Décembre à Janvier correspond à la saison humide et chaude, avec un risque accru de cyclones.</p>
+                
+            </div>
+            <div>
+                <h4 class="font-serif text-xl mb-4 text-template-roche flex items-center gap-2 font-bold">
+                    <span>📃</span> Infos pratiques
+                </h4>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2">🤝 La population du Vanuatu est majoritairement mélanésienne, connue pour son hospitalité et sa culture "Kastom" très présente. Le pays compte plus de 100 langues locales.</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2">🏝️ Le Vanuatu est un archipel volcanique de 83 îles, situé en Mélanésie. Il est souvent cité comme l'un des pays les plus heureux du monde.</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2">🤸 Une tradition insolite est le "Nagol" (saut de la terre) sur l'île de Pentecôte, l'ancêtre du saut à l'élastique, pratiqué entre avril et juin.</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2">🗿 L'île de Tanna abrite le culte de John Frum, une religion cargo unique qui vénère un messie américain.</p>
+                
+            </div>
+            <div>
+                <h4 class="font-serif text-xl mb-4 text-template-roche flex items-center gap-2 font-bold">
+                    <span>🔗</span> Liens Utiles
+                </h4>
+                <ul class="text-sm space-y-3">
+                  <li><a href="https://mytripplanner-dotfr.github.io/Vanuatu-rm8cw237f7tpkn5/map.html" target="_blank" class="hover:text-template-ocre transition flex items-center gap-2"><strong>🗺️ Carte Interactive</strong></a></li>
+                    
+                        <li><a href="https://www.vanuatu.travel/" target="_blank" class="hover:text-template-ocre transition flex items-center gap-2"><strong>📘 Tourisme Vanuatu</strong></a></li>
+                    
+                        <li><a href="https://www.airvanuatu.com/" target="_blank" class="hover:text-template-ocre transition flex items-center gap-2"><strong>✈️ Air Vanuatu</strong></a></li>
+                    
+                        <li><a href="https://www.met.gov.vu/" target="_blank" class="hover:text-template-ocre transition flex items-center gap-2"><strong>🌤️ Vanuatu Meteorology</strong></a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-50 border-t border-slate-200 py-6">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <p class="font-serif text-lg text-template-roche mb-2 font-bold">
+                MyTrip<span class="text-template-ocre">Planner</span>
+            </p>
+
+                <div class="flex justify-center gap-4 text-[10px] md:text-xs text-slate-500 mb-4 font-semibold">
+                    <a href="#" class="hover:text-brand-primary transition hover:underline">Mentions Légales</a>
+                    <a href="#" class="hover:text-brand-primary transition hover:underline">CGU</a>
+                    <a href="#" class="hover:text-brand-primary transition hover:underline">Confidentialité</a>
+                </div>
+
+            <p class="text-[10px] text-gray-400 mb-2">
+                &copy; 2025 MyTripPlanner. Tous droits réservés.
+            </p>
+
+            <div class="flex justify-center">
+                <p class="text-[10px] text-gray-400 uppercase tracking-widest px-2 py-0.5 border border-gray-200 rounded-full inline-block">
+                    🤖 Contenu généré par IA
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Gestion Scroll & Menu
+        const navDesktop = document.getElementById('nav-desktop');
+        const navMobile = document.getElementById('nav-mobile');
+        
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 300) {
+                navDesktop.classList.remove('-translate-y-full');
+                navMobile.classList.remove('-translate-y-full');
+            } else {
+                navDesktop.classList.add('-translate-y-full');
+                navMobile.classList.add('-translate-y-full');
+            }
+        });
+
+        // Active Link Highlighter
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const activeId = entry.target.id;
+                    document.querySelectorAll('.mobile-link').forEach(link => {
+                        const linkHref = link.getAttribute('href').substring(1);
+                        if (linkHref === activeId) {
+                            link.classList.remove('bg-gray-100', 'text-gray-700');
+                            link.classList.add('bg-template-ocre', 'text-white', 'shadow-md');
+                            link.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+                        } else {
+                            link.classList.add('bg-gray-100', 'text-gray-700');
+                            link.classList.remove('bg-template-ocre', 'text-white', 'shadow-md');
+                        }
+                    });
+                }
+            });
+        }, { rootMargin: '-40% 0px -60% 0px' });
+
+        document.querySelectorAll('div[id^="jour-"], section#pratique').forEach(s => observer.observe(s));
+    </script>
+</body>
+</html>
